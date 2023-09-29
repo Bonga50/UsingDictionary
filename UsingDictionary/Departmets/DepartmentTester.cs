@@ -21,14 +21,16 @@ namespace UsingDictionary.Departmets
             employees.Add("IT", new List<employees>() { new employees(5, "GETTY"), new employees(54, "Images"), new employees(33, "Basic") });
             employees.Add("Finance", new List<employees>() { new employees(34, "Margit"), new employees(45, "Singlton"), new employees(63, "Sean") });
 
+            char c ='A';
+
             for (int i = 0; i < employees.Count; i++)
             {
-                Console.WriteLine(employees.ElementAt(i).Key);
+                Console.WriteLine($"{c++} {employees.ElementAt(i).Key}");
                 for (int j = 0; j < employees.ElementAt(i).Value.Count; j++)
                 {
                     Console.WriteLine($"{employees.ElementAt(i).Value[j].empName} - {employees.ElementAt(i).Value[j].empNum}");
                 }
-                Console.WriteLine( "");
+                Console.WriteLine("");
             }
 
 
